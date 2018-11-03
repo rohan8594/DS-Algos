@@ -17,23 +17,18 @@
 # Output: false
 
 def validParentheses(s):
-
     stack = []
-    paren_dict = {"(" : ")", "[" : "]", "{" : "}"}
+    paren_dict = {")" : "(", "]" : "[", "}" : "{"}
 
     for curr in s:
-        if curr in paren_dict.keys():
+        if curr in paren_dict.values():
             stack.append(curr)
 
         if stack == []:
             return False
 
-        if curr in paren_dict.values():
-            if curr == ")" and stack.pop() != "(":
-                return False
-            elif curr == "]" and stack.pop() != "[":
-                return False
-            elif curr == "}" and stack.pop() != "{":
+        if curr in paren_dict.keys():
+            if stack.pop() != paren_dict[curr]:
                 return False
 
     return stack == []

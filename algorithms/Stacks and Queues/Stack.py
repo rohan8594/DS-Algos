@@ -3,23 +3,29 @@ class Stack:
 	def __init__(self):
 		self.stack = []
 
+
 	def isEmpty(self):
 		return self.stack == []
+
 
 	def push(self, item):
 		self.stack.append(item)
 
+
 	def pop(self):
 		if (self.isEmpty()):
 			return None
-		else:
-			return self.stack.pop()
+		
+		return self.stack.pop()
+
 
 	def peek(self):
 		if (self.isEmpty()):
 			return None
-		else:
-			return self.stack[len(self.stack)  - 1]
+		
+		return self.stack[len(self.stack)  - 1]
+
+
 
 s = Stack()
 print s.isEmpty()
