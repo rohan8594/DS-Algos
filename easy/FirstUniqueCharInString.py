@@ -1,4 +1,4 @@
-# Given a string, find the first non-repeating character in it 
+# Given a string, find the first non-repeating character in it
 # and return it's index. If it doesn't exist, return -1.
 
 # Examples:
@@ -10,31 +10,18 @@
 # return 2.
 # Note: You may assume the string contain only lowercase letters.
 
+
 class Solution:
-    def firstUniqChar(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
-        unique = {}
-        seen = set()
-        index = 0
-        
-        for curr in s:
-            if curr not in seen:
-                unique[curr] = index
-                seen.add(curr)
+    def firstUniqChar(self, s: 'str') -> 'int':
+        charCounts = {}
+
+        for cur in s:
+            if cur not in charCounts:
+                charCounts[cur] = 1
             else:
-                # to avoid KeyError first check if key exists
-                # ALT: unique.pop(curr, None)
-                if (curr in unique):
-                    unique.pop(curr)
-            index += 1
-        
-        if unique == {}:
-            return -1
-        else:
-            lower = unique[list(unique.keys())[0]]
-            for curr in unique.keys():
-                lower = min(lower, unique[curr])
-            return lower
+                charCounts[cur] += 1
+
+        for i in range(len(s)):
+            if charCounts[s[i]] == 1:
+                return i
+        return -1
