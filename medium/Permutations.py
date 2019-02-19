@@ -13,6 +13,7 @@
 #   [3,2,1]
 # ]
 
+
 class Solution:
     def permute(self, nums):
         """
@@ -35,19 +36,20 @@ class Solution:
 
     # String Permutations
     def permute_string(self, s):
-	    result = []
+        result = []
 
-	    if len(s) <= 1:
-	    	return [s]
+        if len(s) <= 1:
+            return s
 
-	    for i in range(len(s)):
-	    	curChar = s[i]
-	    	remain = s[0:i] + s[(i + 1):]
+        for i in range(len(s)):
+            curChar = s[i]
+            remain = s[0:i] + s[(i + 1):]
 
-	    	for perm in self.permute_string(remain):
-	    		result.append(curChar + perm)
+            for perm in self.permute_string(remain):
+                result.append(curChar + perm)
 
-	    return result
+        return result
+
 
 obj = Solution()
 print(obj.permute([1, 2, 3]))
