@@ -9,6 +9,7 @@
 # Input: "A man, a plan, a canal: Panama"
 # Output: "amanaP :lanac a ,nalp a ,nam A"
 
+
 class ReverseString:
     def reverseString(self, s):
         """
@@ -17,11 +18,11 @@ class ReverseString:
         """
         stack = []
         result = []
-        
+
         for curr in s:
             stack.append(curr)
-        
+
         for i in range(len(s)):
             result.append(stack.pop())
-            
+
         return ''.join(result)

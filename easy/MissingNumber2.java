@@ -15,18 +15,18 @@ Output: 5 is the missing number
 
 class MissingNumber2 {
     public int missingNumber2(int[] arr1, int[] arr2) {
-        
+
         int result = 0;
 
         for (int curr : arr1) {
-        	result ^= curr;
+            result ^= curr;
         }
 
         for (int curr : arr2) {
-        	result ^= curr;
+            result ^= curr;
         }
 
         return result;
     }
-    
+
 }

@@ -27,6 +27,7 @@
 # Explanation:
 # Since the character "a" does not repeat, it is not compressed. "bbbbbbbbbbbb" is replaced by "b12".
 
+
 class Solution:
     def compress(self, chars):
         """
@@ -37,7 +38,7 @@ class Solution:
         curr_count = 1
         i = 0
         len_of_chars = len(chars)
-        
+
         for curr in chars[1:]:
             if curr == curr_char:
                 curr_count += 1
@@ -59,7 +60,7 @@ class Solution:
                         i += 1
                 curr_char = curr
                 curr_count = 1
-        
+
         if curr_count == 1:
             chars.insert(i, curr_char)
             i += 1
@@ -75,8 +76,8 @@ class Solution:
                 i += 1
                 chars.insert(i, str(curr_count))
                 i += 1
-        
+
         for i in range(len_of_chars):
             chars.pop()
-        
+
         return len(chars)

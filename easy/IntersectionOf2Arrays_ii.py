@@ -11,8 +11,9 @@
 
 # Note:
 
-# Each element in the result should appear as many times as it shows 
+# Each element in the result should appear as many times as it shows
 # in both arrays. And the result can be in any order.
+
 
 class Solution:
     def intersect(self, nums1, nums2):
@@ -23,16 +24,16 @@ class Solution:
         """
         seen = {}
         result = []
-        
+
         for cur in nums1:
             if cur not in seen:
                 seen[cur] = 1
             else:
                 seen[cur] += 1
-                
+
         for cur in nums2:
             if cur in seen and seen[cur] != 0:
                 result.append(cur)
                 seen[cur] -= 1
-        
+
         return result

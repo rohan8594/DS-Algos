@@ -9,13 +9,14 @@
 # Input: s = "rat", t = "car"
 # Output: false
 
+
 class IsAnagram:
     def isAnagram(self, s1, s2):
-        
+
         self.s1 = s1.replace(' ', '').lower()
         self.s2 = s2.replace(' ', '').lower()
 
-        if (len(s1) !=  len(s2)):
+        if (len(s1) != len(s2)):
             return False
 
         charCount = {}

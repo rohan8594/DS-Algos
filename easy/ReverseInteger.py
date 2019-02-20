@@ -14,13 +14,14 @@
 # Output: 21
 
 # Note:
-# Assume we are dealing with an environment which could only store 
-# integers within the 32-bit signed integer range: [−231,  231 − 1]. 
-# For the purpose of this problem, assume that your function returns 
+# Assume we are dealing with an environment which could only store
+# integers within the 32-bit signed integer range: [−231,  231 − 1].
+# For the purpose of this problem, assume that your function returns
 # 0 when the reversed integer overflows.
 
-# NOTE: 
+# NOTE:
 # Checkout Leetcode solution for a more optimal approach
+
 
 class Solution:
     def reverse(self, x):
@@ -32,23 +33,23 @@ class Solution:
         stack = []
         reverse = []
         result = 0
-        
+
         for cur in str(x):
             if cur == "-":
                 negative = True
                 continue
             stack.append(cur)
-        
+
         for i in range(len(stack)):
             reverse.append(stack.pop())
-            
+
         if negative:
             result = int("-" + "".join(reverse))
-            
+
         else:
             result = int("".join(reverse))
-        
-        if result < (-2 ** 31) or result > ((2 ** 31) - 1): # if result is overflowing
+
+        if result < (-2 ** 31) or result > ((2 ** 31) - 1):  # if result is overflowing
             return 0
-        
+
         return result

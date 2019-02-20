@@ -43,9 +43,9 @@ if __name__ == "__main__":
     array = ThreeStacksSingleArray()
     array.push(2, 11)
     array.push(2, 13)
-    print array.pop(0)  # Trying to pop an empty stack.
-    print array.peek(2)  # 13
+    print(array.pop(0))  # Trying to pop an empty stack.
+    print(array.peek(2))  # 13
     array.push(0, 20)
     array.push(0, 30)
-    print array.pop(0)  # 30
-    print array.peek(0)  # 20
+    print(array.pop(0))  # 30
+    print(array.peek(0))  # 20

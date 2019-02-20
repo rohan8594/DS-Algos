@@ -1,4 +1,4 @@
-def binary_search(arr,ele):
+def binary_search(arr, ele):
 
     first = 0
     last = len(arr) - 1
@@ -19,4 +19,5 @@ def binary_search(arr,ele):
 
     return found
 
-print(binary_search([1,2,3,4,5,6,7,8,9,10], 4))
+
+print(binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 4))

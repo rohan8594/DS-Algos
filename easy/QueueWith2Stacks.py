@@ -5,6 +5,7 @@
 # peek() -- Get the front element.
 # empty() -- Return whether the queue is empty.
 
+
 class MyQueue:
 
     def __init__(self):
@@ -31,8 +32,7 @@ class MyQueue:
             while (self.stack1):
                 self.stack2.append(self.stack1.pop())
         return self.stack2.pop()
-        
-        
+
     def peek(self):
         """
         Get the front element.
@@ -42,7 +42,7 @@ class MyQueue:
             while (self.stack1):
                 self.stack2.append(self.stack1.pop())
         return self.stack2[len(self.stack2) - 1]
-        
+
     def empty(self):
         """
         Returns whether the queue is empty.

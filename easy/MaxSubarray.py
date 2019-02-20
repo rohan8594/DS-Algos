@@ -7,6 +7,7 @@
 # Output: 6
 # Explanation: [4,-1,2,1] has the largest sum = 6.
 
+
 class Solution:
     def maxSubArray(self, nums):
         """
@@ -15,9 +16,9 @@ class Solution:
         """
         cont_sum = nums[0]
         max_sum = nums[0]
-        
+
         for curr in nums[1:]:
             cont_sum = max(curr + cont_sum, curr)
             max_sum = max(cont_sum, max_sum)
-            
+
         return max_sum

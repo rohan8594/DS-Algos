@@ -1,5 +1,6 @@
 # CTCI Question 1.4
 
+
 def palindromePerm(S):
     charCounts = {}
     S = S.lower().replace(' ', '')
@@ -19,6 +20,7 @@ def palindromePerm(S):
         return False
 
     return True
+
 
 print(palindromePerm('Tact Coa'))
 print(palindromePerm('code'))

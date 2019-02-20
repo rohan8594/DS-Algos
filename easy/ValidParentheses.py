@@ -16,9 +16,10 @@
 # Input: "([)]"
 # Output: false
 
+
 def validParentheses(s):
     stack = []
-    paren_dict = {")" : "(", "]" : "[", "}" : "{"}
+    paren_dict = {")": "(", "]": "[", "}": "{"}
 
     for curr in s:
         if curr in paren_dict.values():
@@ -32,6 +33,7 @@ def validParentheses(s):
                 return False
 
     return stack == []
+
 
 print(validParentheses("{()[]}"))
 print(validParentheses("([)]"))

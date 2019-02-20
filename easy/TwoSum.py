@@ -9,6 +9,7 @@
 # Because nums[0] + nums[1] = 2 + 7 = 9,
 # return [0, 1].
 
+
 class Solution:
     def twoSum(self, nums, target):
         """
@@ -16,21 +17,20 @@ class Solution:
         :type target: int
         :rtype: List[int]
         """
-        
+
         seen = {}
         result = []
         index = 0
-        
+
         for curr in nums:
             remain = target - curr
-            
+
             if remain not in seen:
                 seen[curr] = index
             else:
                 result.append(seen[remain])
                 result.append(index)
-            
+
             index += 1
-        
+
         return result
-        

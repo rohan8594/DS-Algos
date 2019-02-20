@@ -20,17 +20,18 @@
 # This solution has O(log(N) base 3) time complexity, but I think
 # leetcode solution uses a base conversion trick to solve in O(1) time.
 
+
 class Solution:
     def isPowerOfThree(self, n):
         """
         :type n: int
         :rtype: bool
         """
-        result = 1 # Set to 1 instead of 0, coz we want result == n to give false if n = 0
+        result = 1  # Set to 1 instead of 0, coz we want result == n to give false if n = 0
         count = 0
-        
+
         while result < n:
             count += 1
             result = 3 ** count
-            
+
         return result == n

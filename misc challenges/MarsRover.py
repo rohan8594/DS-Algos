@@ -7,11 +7,12 @@
 #  2. STRING_ARRAY cmds
 #
 
+
 def roverMove(matrixSize, cmds):
     # Write your code here
     rover = 0
     i, j = 0, 0
-    
+
     for cmd in cmds:
         if cmd == "RIGHT":
             if j < matrixSize - 1:
@@ -26,4 +27,3 @@ def roverMove(matrixSize, cmds):
             if i < matrixSize - 1:
                 i += 1
     return (i * matrixSize) + j
-    

@@ -16,14 +16,14 @@ Output: 8
 
 class MissingNumber {
     public int missingNumber(int[] nums) {
-        
+
         int result = 0;
         int i;
-        
+
         for (i = 0; i < nums.length; i++) {
             result = result ^ i ^ nums[i];
         }
-        
+
         return result ^ i;
     }
 }

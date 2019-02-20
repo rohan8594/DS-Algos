@@ -1,5 +1,5 @@
-# Given an array A of non-negative integers, return an array 
-# consisting of all the even elements of A, followed by all the odd 
+# Given an array A of non-negative integers, return an array
+# consisting of all the even elements of A, followed by all the odd
 # elements of A.
 
 # You may return any answer array that satisfies this condition.
@@ -10,6 +10,7 @@
 # Output: [2,4,3,1]
 # The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted.
 
+
 class Solution:
     def sortArrayByParity(self, A):
         """
@@ -18,11 +19,11 @@ class Solution:
         """
         odd = []
         even = []
-        
+
         for curr in A:
             if curr % 2 == 0:
                 even.append(curr)
             else:
                 odd.append(curr)
-                
+
         return even + odd
