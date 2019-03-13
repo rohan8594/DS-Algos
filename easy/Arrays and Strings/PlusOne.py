@@ -26,13 +26,14 @@ class Solution:
         :type digits: List[int]
         :rtype: List[int]
         """
-        resultArr = []
-        for i in range(len(digits)):
-            digits[i] = str(digits[i])
+        res = []
+        num = 0
+        for digit in digits:
+            num = (num * 10) + digit
 
-        result = int(''.join(digits)) + 1
+        num += 1
+        while num != 0:
+            res.append(num % 10)
+            num = num // 10
 
-        for cur in str(result):
-            resultArr.append(int(cur))
-
-        return resultArr
+        return res[::-1]

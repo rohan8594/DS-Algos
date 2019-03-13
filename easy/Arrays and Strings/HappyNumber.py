@@ -32,8 +32,9 @@ class Solution:
             else:
                 seen.add(n)
                 sum = 0
-                for cur in str(n):
-                    sum += int(cur) ** 2
+                while n != 0:
+                    sum += (n % 10) ** 2
+                    n = n // 10
                 n = sum
 
         return True
