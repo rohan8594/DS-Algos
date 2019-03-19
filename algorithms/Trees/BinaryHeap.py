@@ -6,9 +6,9 @@ class BinHeap:
     def insert(self, x):
         self.heap.append(x)
         self.size += 1
-        self.moveUp(self.size)
+        self.siftUp(self.size)
 
-    def moveUp(self, i):
+    def siftUp(self, i):
         while i // 2 > 0:
             if self.heap[i] < self.heap[i // 2]:
                 temp = self.heap[i // 2]
@@ -21,8 +21,24 @@ class BinHeap:
         self.heap[1] = self.heap[self.size]
         self.size -= 1
         self.heap.pop()
-        self.moveDown(1)
+        self.siftDown(1)
         return res
 
-    def moveDown(self, i):
-        pass
+    def siftDown(self, i):
+        while i * 2 <= self.size:
+            mc = self.getMinChild(i)
+
+            if self.heap[i] > self.heap[mc]:
+                temp = self.heap[mc]
+                self.heap[mc] = self.heap[i]
+                self.heap[i] = temp
+            i = mc
+
+    def getMinChild(self, i):
+        if i * 2 == self.size:
+            return i * 2
+        else:
+            if self.heap[i * 2] < self.heap[(i * 2) + 1]:
+                return i * 2
+            else:
+                return (i * 2) + 1
