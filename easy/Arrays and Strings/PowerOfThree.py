@@ -27,11 +27,12 @@ class Solution:
         :type n: int
         :rtype: bool
         """
-        result = 1  # Set to 1 instead of 0, coz we want result == n to give false if n = 0
-        count = 0
+        i = 0
+        res = 0
 
-        while result < n:
-            count += 1
-            result = 3 ** count
-
-        return result == n
+        while res < n:
+            res = 3 ** i
+            if res == n:
+                return True
+            i += 1
+        return False

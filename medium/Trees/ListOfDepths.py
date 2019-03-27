@@ -10,6 +10,8 @@
 
 # Initially, all next pointers are set to NULL.
 
+# NOTE: Leetcode asks for soln using O(1) space. Look at leetcode discussions for this soln.
+
 
 class Node:
     def __init__(self, val, left, right, next):

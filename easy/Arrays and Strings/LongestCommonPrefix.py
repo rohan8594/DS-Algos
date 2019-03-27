@@ -23,20 +23,16 @@ class Solution:
 
         res = ""
         i = 0
-        done = False
 
         while True:
             try:  # for cases where array index is out of bounds
                 curChar = strs[0][i]
                 for s in strs[1:]:
                     if s[i] != curChar:
-                        done = True
-                        break
-                if done:
-                    break
-                else:
-                    res += curChar
-                    i += 1
+                        return res
+
+                res += curChar
+                i += 1
             except:
                 return res
         return res
