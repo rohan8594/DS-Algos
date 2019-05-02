@@ -18,6 +18,13 @@
 # Explanation: There are a total of 2 courses to take.
 #              To take course 1 you should have finished course 0, and to take course 0 you should
 #              also have finished course 1. So it is impossible.
+
+# Logic:
+# if node v has not been visited, then mark it as 0.
+# if node v is being visited, then mark it as -1. If we find a vertex marked as -1 in DFS, then their is a ring.
+# if node v has been visited, then mark it as 1. If a vertex was marked as 1, then no ring contains v or its
+# successors.
+
 import collections
 
 

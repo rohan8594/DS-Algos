@@ -14,6 +14,9 @@
 # Each element in the result should appear as many times as it shows
 # in both arrays. And the result can be in any order.
 
+# Time - O(m + n)
+# Space - O(m + n)
+
 
 class Solution:
     def intersect(self, nums1, nums2):

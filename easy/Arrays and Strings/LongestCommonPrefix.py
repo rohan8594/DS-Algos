@@ -15,6 +15,9 @@
 
 # All given inputs are in lowercase letters a-z.
 
+# Time complexity : O(S), where S is the sum of all characters in all strings.
+# Space complexity : O(1), We only used constant extra space.
+
 
 class Solution:
     def longestCommonPrefix(self, strs: 'list[str]') -> str:

@@ -17,6 +17,9 @@
 # The index is starting from 0 to the list length minus 1.
 # No duplicates in both lists.
 
+# Time complexity : O(l1 + l2)
+# Space complexity : O(l1 * x), hashmap size grows upto l1 * x where x refers to average string length.
+
 
 class Solution:
     def findRestaurant(self, list1: 'list[str]', list2: 'list[str]') -> 'list[str]':

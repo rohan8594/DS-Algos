@@ -12,6 +12,9 @@
 #  [1,4,6,4,1]
 # ]
 
+# Time complexity : O(numRows^2) (1 + 2 + 3 + ... + n - 1 + n = n(n + 1)/ 2 = n^2)
+# Space complexity : O(numRows^2)
+
 
 class Solution:
     def generate(self, numRows: int) -> 'list[list[int]]':

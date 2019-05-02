@@ -45,29 +45,29 @@ class AnimalQueue:
 
 
 # testing
-Q = AnimalQueue()
+# Q = AnimalQueue()
 
-test_list = [randrange(7) for x in xrange(20)]
-for i, x in enumerate(test_list):
-    if x < 4:
-        if i % 2:
-            animal_type = "cat"
-        else:
-            animal_type = "dog"
-        test_list[i] = ("enqueue", Q.enqueue, animal_type,
-                        animal_type + "#" + str(i))
-    elif x == 4:
-        test_list[i] = ("dequeue any", Q.dequeueAny)
-    elif x == 5:
-        test_list[i] = ("dequeue cat", Q.dequeueCat)
-    elif x == 6:
-        test_list[i] = ("dequeue dog", Q.dequeueDog)
+# test_list = [randrange(7) for x in xrange(20)]
+# for i, x in enumerate(test_list):
+#     if x < 4:
+#         if i % 2:
+#             animal_type = "cat"
+#         else:
+#             animal_type = "dog"
+#         test_list[i] = ("enqueue", Q.enqueue, animal_type,
+#                         animal_type + "#" + str(i))
+#     elif x == 4:
+#         test_list[i] = ("dequeue any", Q.dequeueAny)
+#     elif x == 5:
+#         test_list[i] = ("dequeue cat", Q.dequeueCat)
+#     elif x == 6:
+#         test_list[i] = ("dequeue dog", Q.dequeueDog)
 
 
-for operation in test_list:
-    if len(operation) == 4:
-        print operation[0], operation[2], operation[3]
-        operation[1](operation[2], operation[3])
-    else:
-        print operation[0],
-        print operation[1]()
+# for operation in test_list:
+#     if len(operation) == 4:
+#         print operation[0], operation[2], operation[3]
+#         operation[1](operation[2], operation[3])
+#     else:
+#         print operation[0],
+#         print operation[1]()

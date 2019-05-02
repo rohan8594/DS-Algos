@@ -8,16 +8,15 @@ def findMidpointCourse_dfs(pairs):
 
     def dfs(v):
         visited[v] = True
-        if not visited[graph[v]]:
+        if graph[v] in visited and not visited[graph[v]]:
             dfs(graph[v])
         topoOrder.append(v)
-        print(topoOrder)
 
     for v in visited:
         if not visited[v]:
             dfs(v)
 
-    return topoOrder
+    return topoOrder[::-1][len(topoOrder) // 2]
 
 
 def findMidpointCourse(pairs):
@@ -54,6 +53,6 @@ s2 = [["DataStructures", "Algorithms"],
       ["ComputerArchitecture", "DataStructures"],
       ["SoftwareDesign", "ComputerNetworks"]]
 
-# print(findMidpointCourse(s1))
-# print(findMidpointCourse(s2))
+print(findMidpointCourse(s1))
+print(findMidpointCourse(s2))
 print(findMidpointCourse_dfs(s2))
