@@ -31,8 +31,6 @@
 # Output: []
 
 # Explanation: The endWord "cog" is not in wordList, therefore no possible transformation.
-
-# Note: Works partially for 24/39 test cases
 import collections
 
 
@@ -43,31 +41,28 @@ class Solution:
 
         for word in wordList:
             for i in range(len(word)):
-                genericWord = word[:i] + "_" + word[i+1:]
+                genericWord = word[: i] + "_" + word[i+1:]
                 wordbuckets[genericWord].append(word)
 
-        # print(wordbuckets)
-        deq = collections.deque([(beginWord, 1, [beginWord])])
-        visited = {beginWord: True}
-        shortest = 0
+        deq = collections.deque([(beginWord, [beginWord])])
+        shortest = float('inf')
+        visited = {}
         while deq:
-            curWord, level, curTransform = deq.popleft()
+            curWord, curTransform = deq.popleft()
+            visited[curWord] = True
 
             for i in range(len(curWord)):
-                genericWord = curWord[:i] + "_" + curWord[i+1:]
+                genericWord = curWord[: i] + "_" + curWord[i+1:]
                 for word in wordbuckets[genericWord]:
 
-                    if word == endWord and not shortest:
-                        shortest = level
-                        res.append(curTransform + [word])
-                    elif word == endWord and level == shortest:
-                        res.append(curTransform + [word])
+                    if word == endWord:
+                        if len(curTransform) < shortest:
+                            shortest = len(curTransform)
+                            res = [curTransform + [word]]
+
+                        elif shortest == len(curTransform):
+                            res.append(curTransform + [word])
 
                     if word not in visited:
-                        visited[word] = True
-                        deq.append((word, level + 1, curTransform + [word]))
+                        deq.append((word, curTransform + [word]))
         return res
-
-
-s = Solution()
-s.findLadders("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"])

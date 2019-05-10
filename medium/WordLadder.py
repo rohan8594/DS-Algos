@@ -30,7 +30,6 @@
 # Output: 0
 
 # Explanation: The endWord "cog" is not in wordList, therefore no possible transformation.
-
 import collections
 
 
@@ -43,10 +42,10 @@ class Solution:
                 tmp = word[:i] + "_" + word[i+1:]
                 wordbuckets[tmp].append(word)
 
-        queue = [(beginWord, 1)]
+        queue = collections.deque([(beginWord, 1)])
         visited = {beginWord: True}
         while queue:
-            curWord, level = queue.pop(0)
+            curWord, level = queue.popleft()
 
             for i in range(len(curWord)):
                 genericWord = curWord[:i] + "_" + curWord[i+1:]

@@ -9,6 +9,9 @@
 
 # Input: [[7,10],[2,4]]
 # Output: 1
+
+# Time Complexity: O(NlogN)
+# Space Complexity: O(N)
 import heapq
 
 
