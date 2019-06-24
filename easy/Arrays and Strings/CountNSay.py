@@ -40,5 +40,6 @@ class Solution:
                     curCount += 1
 
             sequence += str(curCount) + curDigit
+            prevSequence = sequence
 
-        return sequence
+        return prevSequence

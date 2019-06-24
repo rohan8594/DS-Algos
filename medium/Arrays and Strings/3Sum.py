@@ -38,8 +38,6 @@ class Solution:
                 else:
                     temp = [nums[i], remain, cur]
                     temp.sort()
-                    temp2 = (temp[0], temp[1], temp[2])
-
-                    res.add(temp2)
+                    res.add(tuple(temp))
 
         return list(res)

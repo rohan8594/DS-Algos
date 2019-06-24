@@ -21,20 +21,13 @@
 
 class Solution:
     def maxProfit(self, prices):
-        """
-        :type prices: List[int]
-        :rtype: int
-        """
-        lowest = 0
-        curDiff = 0
+        idxOfLowest = 0
         maxDiff = 0
 
         for i in range(1, len(prices)):
-            if prices[i] < prices[lowest]:
-                lowest = i
-            elif prices[i] > prices[lowest]:
-                curDiff = prices[i] - prices[lowest]
-
-            maxDiff = max(curDiff, maxDiff)
+            if prices[i] < prices[idxOfLowest]:
+                idxOfLowest = i
+            else:
+                maxDiff = max(maxDiff, prices[i] - prices[idxOfLowest])
 
         return maxDiff
