@@ -38,8 +38,8 @@ This project maintains solutions to various DS, algorithms, and leetcode questio
 │   │   ├── Trees
 │   ├── hard
 ├── misc challenges
-├── CONTRIBUTING.md
 ├── .gitignore
+├── CONTRIBUTING.md
 ├── LICENSE
 └── README.md
 ```
