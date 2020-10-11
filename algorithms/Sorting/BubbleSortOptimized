@@ -17,8 +17,8 @@ def bubbleSortOptimised(arr):
             if arr[i] > arr[i+1]: # not in order
                 arr[i], arr[i+1] = arr[i+1], arr[i] # swap
                 swapped = True
-                i = i + 1 # next pair
-            passes = passes - 1 # next pass, need not consider largest item
+            i = i + 1 # next pair
+        passes = passes - 1 # next pass, need not consider largest item
 
     return arr
 
