@@ -1,6 +1,6 @@
 # DS-Algos
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Introduction
@@ -72,6 +72,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/saurabh-172"><img src="https://avatars1.githubusercontent.com/u/56040579?v=4" width="100px;" alt=""/><br /><sub><b>saurabh-172</b></sub></a><br /><a href="https://github.com/rohan8594/DS-Algos/commits?author=saurabh-172" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Kavyapriyakp"><img src="https://avatars2.githubusercontent.com/u/54388796?v=4" width="100px;" alt=""/><br /><sub><b>Kavyapriya R</b></sub></a><br /><a href="https://github.com/rohan8594/DS-Algos/commits?author=Kavyapriyakp" title="Code">💻</a></td>
     <td align="center"><a href="http://amulyadixit07@gmail.com"><img src="https://avatars0.githubusercontent.com/u/66437295?v=4" width="100px;" alt=""/><br /><sub><b>Amulya</b></sub></a><br /><a href="https://github.com/rohan8594/DS-Algos/commits?author=Amulya-coder" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/shubhankarpataskar"><img src="https://avatars2.githubusercontent.com/u/34801128?v=4" width="100px;" alt=""/><br /><sub><b>Shubhankar Pataskar</b></sub></a><br /><a href="https://github.com/rohan8594/DS-Algos/commits?author=shubhankarpataskar" title="Code">💻</a></td>
   </tr>
 </table>
 
