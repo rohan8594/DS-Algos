@@ -1,6 +1,6 @@
 # DS-Algos
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Introduction
@@ -67,6 +67,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/AryashDubey"><img src="https://avatars3.githubusercontent.com/u/70095055?v=4" width="100px;" alt=""/><br /><sub><b>AryashDubey</b></sub></a><br /><a href="https://github.com/rohan8594/DS-Algos/commits?author=AryashDubey" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/shubham2704"><img src="https://avatars2.githubusercontent.com/u/40126673?v=4" width="100px;" alt=""/><br /><sub><b>Shubham Goswami</b></sub></a><br /><a href="https://github.com/rohan8594/DS-Algos/commits?author=shubham2704" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/dhsgisc"><img src="https://avatars1.githubusercontent.com/u/175011?v=4" width="100px;" alt=""/><br /><sub><b>Gi Soong Chee</b></sub></a><br /><a href="https://github.com/rohan8594/DS-Algos/commits?author=dhsgisc" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/saurabh-172"><img src="https://avatars1.githubusercontent.com/u/56040579?v=4" width="100px;" alt=""/><br /><sub><b>saurabh-172</b></sub></a><br /><a href="https://github.com/rohan8594/DS-Algos/commits?author=saurabh-172" title="Code">💻</a></td>
   </tr>
 </table>
 
